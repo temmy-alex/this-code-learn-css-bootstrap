@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Eksternal CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet"> 
+    <title>Concept CSS</title>
+    <!-- Internal CSS : CSS yang diletakkan di dalam head -->
+    <style>
+        #heading-3 {
+            background-color: green;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Menggunakan prioritas value menggunakan !important */
+        .content {
+            background-color: green !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Terdapat 2 selector yang sering digunakan pada css
+        ID & Class
+        - ID digunakan untuk element yang memiliki karakter unik (Karakter unik biasanya digunakan untuk javascript / jquery) penulisan selector menggunakan tanda (#)
+        - Class merupakan selector yang sifatnya reusable (dapat digunakan oleh element lain secara berulang) penulisan selector class mengunakan tanda (.)
+    -->
+    <h3 id="heading-3">Hello World!</h3>
+    <div class="content">
+        <p style="color: rgb(240, 250, 250);background-color: red;font-family: 'Arial', 'Times New Roman';padding: 0.5em;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus hic, dignissimos dolor impedit maiores ea similique commodi exercitationem, 
+            voluptatum aut. Porro similique dolorum aperiam placeat eos facilis asperiores debitis.</p>
+    </div>
+
+    <!-- Inline CSS -->
+    <!-- Tag target yang akan diubah
+        Property adalah fungsional yang akan digunakan untuk mengubah element html (Example : color digunakan untuk mengubah warna (color: white))
+        Value adalah nilai yang akan diisi pada property yang digunakan
+    -->
+    <br>
+    <a href="#" class="btn btn-primary btn-custom">Click Here!</a>
+</body>
+</html>

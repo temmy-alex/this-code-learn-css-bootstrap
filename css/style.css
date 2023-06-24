@@ -1,0 +1,22 @@
+.content {
+    font-style: italic;
+    border-radius: 2em;
+    background-color: blue;
+    width: 39em;
+    height: 8em;
+}
+
+.btn-custom {
+    background-color: orange !important;
+    border: none !important;
+    font-weight: bolder !important;
+    border-radius: 2em !important;
+}
+
+.btn-custom:hover {
+    background-color: green !important;
+    color: white;
+    border: none !important;
+    font-weight: bolder !important;
+    border-radius: 2em !important;
+}
