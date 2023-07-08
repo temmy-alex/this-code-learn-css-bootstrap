@@ -1,0 +1,68 @@
+.btn-custom {
+    background-color: #e84393 !important;
+    border: none !important;
+    font-weight: bolder !important;
+    border-radius: 2em !important;
+    color: #dfe6e9 !important;
+}
+
+/* Akan berubah ketika button di click menjadi warna ungu menggunakan pseudo class active*/
+.btn-custom:active {
+    background-color: #6c5ce7 !important;
+    border: none !important;
+    font-weight: bolder !important;
+    border-radius: 2em !important;
+    color: #dfe6e9 !important;
+}
+
+/* Ini merupakan selector spesifik target menggunakan atribut */
+input[type="email"] {
+    border-radius: 2em;
+    border: 1px solid #e84393;
+}
+
+/* Berubah ketika layar memiliki ukuran maksimal / sama dengan 320px */
+/* Gunakan min-width & max-width */
+@media (min-width: 320px) and (max-width: 425px) {
+    input[type="email"] {
+        border-radius: 2em;
+        background-color:#e84393;
+    }
+
+    .btn-custom {
+        background-color: #dfe6e9 !important;
+        border: none !important;
+        font-weight: bolder !important;
+        border-radius: 2em !important;
+        color: #e84393 !important;
+    }
+
+    .btn-custom:active {
+        background-color: #fd79a8 !important;
+        border: none !important;
+        font-weight: bolder !important;
+        border-radius: 2em !important;
+        color: #dfe6e9 !important;
+    }
+
+    /* Menyembunyikan element pada mode ukuran mobile */
+    input[type="text"] {
+        display: none;
+    }
+
+    .mt-mobile {
+        margin-bottom: 2em !important;
+    }
+
+    .navbar-brand {
+        color: #e84393 !important;
+    }
+
+    .custom-toggler.navbar-toggler {
+        border-color: rgb(255,102,203);
+    } 
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+}
